@@ -3,9 +3,28 @@
   padding: 0px;
 }
 
-:root {
+:root{
+  --color-primary: #2d3250;
+  --color-text:#ffffff;
+  --color-highlight: #f6b178;
+  --color-secondary: #686e9d;
+  --color-extra: #424769;
+}
+
+.option-1 {
+  --color-primary: #0b234f;
+  --color-text: #00edf3;
+  --color-highlight: #fb6b42;
+  --color-secondary: #009bfc;
+  --color-extra: #00a2a2;
+}
+
+.option-2 {
   --color-primary: #011627;
-  --color-text: #82aaff;
+  --color-text: #81a9fd;
+  --color-highlight: #7fdbca;
+  --color-secondary: #ae81ff;
+  --color-extra: #ebc38d;
 }
 
 header {
@@ -15,16 +34,22 @@ header {
   height: 75px;
   /*background-color: lightblue;*/
   margin: 0px 10vw;
-  border-bottom: 2px;
-  border-style: solid;
+  /*border-bottom-color: var(--color-extra);*/
+  /*box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);*/
 }
+
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: var(--color-primary);
+  background-color: #cccccc;
+  background-image: url(/images/pexels-joyston-judah-933054.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
 section {
   height: 100vh;
 }
+
 .right-sec {
   display: flex;
   justify-content: space-between;
@@ -33,22 +58,22 @@ section {
   padding-right: 20px;
   align-items: center;
   font-size: 14px;
-  color: #81a9fd;
+  color: var(--color-text);
 }
 
 .left-sec {
   margin-left: 50px;
   display: flex;
-  color: #81a9fd;
+  color: var(--color-text);
 }
 
 .contact-text {
   padding: 15px;
   border-style: solid;
   border-width: 2px;
-  border-color: #7fdbca;
+  border-color: var(--color-highlight);
   border-radius: 25px;
-  color: #7fdbca;
+  color: var(--color-highlight);
 }
 
 .hero {
@@ -61,7 +86,8 @@ section {
 .avatar-img-container {
   width: 176px;
   height: 176px;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 .avatar-img-obj {
   display: block;
@@ -70,16 +96,18 @@ section {
   width: 174px;
   height: 174px;
   border-style: solid;
-  border-color: #7fdbca;
+  border-color: var(--color-extra);
   border-radius: 50%;
 }
 .name {
   font-size: 2rem;
-  color: #ae81ff;
-  padding-top: 10px;
+  color: var(--color-text);
+  padding-bottom: 10px;
+  font-weight: 700;
 }
 .description {
-  color: #81a9fd;
+  color: var(--color-text);
+  margin-bottom: 10px;
 }
 
 .icon-links {
@@ -96,5 +124,5 @@ section {
 .insta i,
 .github i {
   font-size: 25px;
-  color: #ebc38d;
+  color: var(--color-highlight);
 }
