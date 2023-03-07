@@ -3,12 +3,13 @@
   padding: 0px;
 }
 
-:root{
+:root {
   --color-primary: #2d3250;
-  --color-text:#ffffff;
+  --color-text: #ffffff;
   --color-highlight: #f6b178;
   --color-secondary: #686e9d;
   --color-extra: #424769;
+  --color-bg: #6a6371;
 }
 
 .option-1 {
@@ -67,13 +68,23 @@ section {
   color: var(--color-text);
 }
 
+.contact {
+  text-decoration: none;
+}
 .contact-text {
-  padding: 15px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: var(--color-text);
+  /*background-color: var(--color-text);*/
   border-style: solid;
   border-width: 2px;
-  border-color: var(--color-highlight);
-  border-radius: 25px;
-  color: var(--color-highlight);
+  border-radius: 50vh;
+  border-color: var(--color-text);
+  transition: all 0.2s ease-in-out;
+}
+.contact-text:hover {
+  color: var(--color-bg);
+  background-color: var(--color-text);
 }
 
 .hero {
@@ -124,5 +135,50 @@ section {
 .insta i,
 .github i {
   font-size: 25px;
-  color: var(--color-highlight);
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 1100px) {
+  .right-sec {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    margin: 0 5vh;
+  }
+  body {
+    font-size: 14px;
+  }
+  .left-sec {
+    margin-left: 0px;
+  }
+  .right-sec {
+    width: 40vw;
+    font-size: 12px;
+    padding: 0;
+  }
+  .contact-text {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    margin: 0 5vh;
+  }
+  body {
+    font-size: 14px;
+  }
+  .left-sec {
+    margin-left: 0px;
+  }
+  .right-sec {
+    width: 50vw;
+    font-size: 12px;
+    padding: 0;
+  }
+  .contact-text {
+    padding: 10px 15px;
+  }
 }
