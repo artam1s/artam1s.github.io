@@ -42,8 +42,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-color: #cccccc;
   background-image: url(/images/pexels-joyston-judah-933054.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: fill;
+  background-position: 65% 50%;
 }
 
 section {
@@ -54,6 +54,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 25vw;
+  max-width: 430px;
   align-items: center;
   font-size: 14px;
   color: var(--color-text);
@@ -160,7 +161,7 @@ section {
     padding: 10px 15px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   header {
     margin: 0 5vh;
   }
@@ -320,7 +321,7 @@ section {
     display: none;
   }
 }
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 501px) {
   .navbar {
     display: none;
   }
