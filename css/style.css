@@ -318,8 +318,7 @@ section {
 
   .navbar .menu-items {
     padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-    background-color: #24345d;
+    background-color: #786979;
     height: 100vh;
     width: 100vw;
     transform: translateX(-150%);
