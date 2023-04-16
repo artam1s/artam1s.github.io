@@ -102,6 +102,13 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+social:
+  type:  Person
+  name:  Artamis
+  links:
+    - "https://twitter.com/artam1s"
+    - "https://instagram.com/artam1s"
   
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -110,6 +117,8 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 # Include in processing
 include: ["_pages"]
 # Exclude from processing.
