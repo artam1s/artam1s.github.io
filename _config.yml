@@ -95,7 +95,6 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-1J70ECKP7G"
-    anonymize_ip: false
 
 category_archive:
   type: liquid
