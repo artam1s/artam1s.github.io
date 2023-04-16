@@ -1,6 +1,6 @@
 ---
-title: Hacking
+title: Cybersecurity
 layout: category
-permalink: /categories/hacking/
-taxonomy: hacking
+permalink: /categories/cybersecurity/
+taxonomy: cybersecurity
 ---

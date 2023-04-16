@@ -26,11 +26,11 @@ feature_row:
     url: "/categories/game-development/"
     btn_label: "Read more"
     btn_class: "btn--inverse"
-  - image_path: /assets/images/hacking-screen.jpg
-    alt: "a screen full of characters in some programming language representing hacking"
-    title: "Hacking"
+  - image_path: /assets/images/cybersecurity-screen.jpg
+    alt: "a screen full of characters in some programming language representing cybersecurity"
+    title: "Cybersecurity"
     excerpt: "This category covers a wide range of topics related to computer security, including ethical hacking, penetration testing, and cybercrime. Whether you're a professional in the field or just starting out, you'll find valuable information here."
-    url: "/categories/hacking/"
+    url: "/categories/cybersecurity/"
     btn_label: "Read more"
     btn_class: "btn--inverse"
   - image_path: /assets/images/books.jpg
