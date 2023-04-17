@@ -26,10 +26,10 @@ feature_row:
     btn_label: "Read more"
     btn_class: "btn--inverse"
   - image_path: /assets/images/developer.jpg
-    alt: "a laptop with a notebook and pen representing development, programming and coding"
-    title: "Development"
-    excerpt: "Looking to level up your development skills? The Development category is the place to be! You'll find tips, tricks, and tools you need to succeed. From coding and programming to web design and UX, I cover it all with fresh and insightful content."
-    url: "/categories/development/"
+    alt: "a laptop with a notebook and pen representing programming and coding"
+    title: "Programming"
+    excerpt: "Looking to level up your programming skills? The Programming category is the place to be! You'll find tips, tricks, and tools you need to succeed. From coding and programming to web design and UX, I cover it all with fresh and insightful content."
+    url: "/categories/programming/"
     btn_label: "Read more"
     btn_class: "btn--inverse"
   - image_path: /assets/images/books.jpg
