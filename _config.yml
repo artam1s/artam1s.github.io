@@ -21,10 +21,9 @@
 title: Artamis
 email: artamis.eth@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This is Artamis personal website and blog, where I write about topics I am passionate about like engineering, art,
-  cybersecurity, game development, website development, finance, books and more. I created this space to share
-  my thoughts, ideas, and experiences with the world, looking to inspire people to follow their curiosity to wherever
-  it may take them.
+  This is Artamis personal website and blog, where I write about topics I am passionate about like tech, art,
+  cybersecurity, web development, finance, books and more. I created this space to share my thoughts, ideas,
+  and experiences with the world, looking to inspire people to follow their curiosity to wherever it may take them.
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: artamis.me
 url: "https://artamis.me" # the base hostname & protocol for your site, e.g. http://example.com
@@ -41,7 +40,7 @@ paginate_path: /blog/page:num/
 author:
   name: "Artamis"
   avatar: "/assets/images/IMG_0436.jpg"
-  bio: "Modern Renaissance Man, a student of the world"
+  bio: "Aerospace engineer by day, hacker & developer by night"
   location: Everywhere
   links:
     - label: "Email"
