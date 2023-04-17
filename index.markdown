@@ -4,9 +4,9 @@ title: "Hi, I'm Artamis!"
 header:
     overlay_image: /assets/images/mountain.jpg
     image_description: "A photo of a mountain with snow on the top"
-    actions:
-      - label: "Join my newsletter"
-        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+#    actions:
+#      - label: "Join my newsletter"
+#        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 excerpt: "Welcome to my little corner of the web where I cover a wide variety of topics that I'm passionate about hoping to inspire curiosity, encourage learning, and provide ideas for exploration."
 author_profile: false
 search: false
