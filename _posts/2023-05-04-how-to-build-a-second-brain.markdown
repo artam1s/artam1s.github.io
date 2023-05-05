@@ -14,11 +14,11 @@ Second Brain is the name given to an organization system focused on creation and
 
 > "Your mind is for having ideas, not holding them" -David Allen, author of Getting Things Done
 
-All of us consume content, work on projects, and need information on a daily basis but a lot of times, we can't even remember what we read a few minutes ago. Having a Second Brain solves this issue by giving us a place to store the things that matter, this can be anything you want and it's going to look different for everyone. The idea is that any time you start a new project, you will already have 90% of what you need so you don't have to waste time gathering it all, you just have to work on that 10%. 
+All of us consume content, work on projects, and need information on a daily basis but a lot of times, we can't even remember what we read a few minutes ago. Having a Second Brain solves this issue by giving us a place to store the things that matter, this can be anything you want and it's going to look different for everyone. The idea is that any time you start a new project, you will already have 90% of what you need so you don't have to waste time gathering it all, you just have to work on that other 10%. 
 
 # How exactly does a Second Brain work?
 
-We as humans have been using technology to extend the things we are able to do, so it's only logical that we also use technology to extend the capabilities of our brain. A Second Brain system works on the basis of *Intermediate Packets* which are little building blocks that can stand on their own but can also be combined to generate even greater things. Intermediate Packets are generated through our unique perspectives and come from the information we already consume. 
+We as humans have been using technology to expand the things we are able to do, so it's only logical that we also use technology to extend the capabilities of our brain. A Second Brain system works on the basis of *Intermediate Packets* which are little building blocks that can stand on their own but can also be combined to generate even greater things. Intermediate Packets are generated through our unique perspectives and come from the information we already consume. 
 
 The fact of storing our thoughts as these *Intermediate Packets* gives us 4 main benefits:
 - Make our ideas concrete
@@ -31,7 +31,7 @@ The fact of storing our thoughts as these *Intermediate Packets* gives us 4 main
 CODE stands for Capture, Organize, Distill, and Express The first 2 steps are based on the divergence stage of design thinking and the last 2 come from the convergence stage.
 
 ## Capture
-Capture gives us a basic guide on what to store and the rule is simple: keep what resonates. It doesn't have to be an analytical decision or meet a series of conditions, if it generates a positive reaction in you, if it peaks your interest or it gives you a feeling of pleasure, that is all you need to know. Some examples of things you can capture in your Second Brain are:
+Capture gives us a basic guide for what to store and the rule is simple: keep what resonates. It doesn't have to be an analytical decision or meet a series of conditions, if it generates a positive reaction in you, if it peaks your interest or it gives you a feeling of pleasure, that is all you need to know. Some examples of things you can capture in your Second Brain are:
 - Highlights
 - Quotes
 - Bookmarks
@@ -42,12 +42,14 @@ Capture gives us a basic guide on what to store and the rule is simple: keep wha
 - Insights
 - Reflections
 
+{% include figure image_path="/assets/images/intermediate-packet-example.png" alt="description of stigmergy used as an intermediate packet example" caption="An example of an Intermediate Packet" %}
+
 It is also a very good idea to capture key information about the source of a note. This information can be useful in the future when trying to remember why exactly you wrote it down or if you want to revisit the original source. This can be: the original web page address, the title of the book, the publishing date, the youtube video name, etc. 
 
-When capturing notes try to write the information with your own words, psychologically speaking it is more like for you to remember the information that way, it is known as the "Generation Effect"
+When capturing notes try to write the information with your own words, psychologically speaking it is more likely for you to remember the information that way, it is known as the "Generation Effect"
 
 ## Organize
-Save things in a way that is useful thinking about how that information will be used. The way proposed by the book is to use the PARA framework and it's components are as follows:
+Save things in a way that is useful thinking about how that information will be used. The way proposed by the book is to use the PARA framework and its components are as follows:
 
 - Projects: Short-term efforts in your work of life that you're working on now
 - Areas: Long term responsibilities you want to manage over time
@@ -73,6 +75,8 @@ An amazing tool to use in this step is *Progressive Summarization*. Progressive 
 3. Making an executive summary or as I like to call it, capture the essence of the note
 
 The idea is that each step should not be more than 10-20% of the previous one. For example if your original note is 2 paragraphs, then the bolded content should be around 2-4 sentences. Then the highlighted parts should be just a couple of words. Finally, capturing the essence of a note consists of writing at the top of the note with your own words what this specific note is about. This is designed this way so when you are trying to retrieve the information, you can quickly skim through the summary in a matter of seconds and understand what it is about.
+
+{% include figure image_path="/assets/images/intermediate-packet-final.png" alt="an example of an intermediate packet after distilling the note" caption="An example of an Intermediate Packet after distilling the note" %}
 
 By the way, these steps don't need to be performed right after you write your note. They can be done in little time slots you get, like standing in line at the supermarket or waiting for the elevator. The idea is to make it as simple as possible to give you the flexibility of doing it when you feel like it.
 
@@ -101,8 +105,8 @@ A Second Brain is an amazing tool to have in your life, it can be like your own 
 Thank you for reading and happy exploring!
 
 # Essence of the article
-- Make our ideas concrete, reveal connections between ideas, incubate ideas, sharpen your perspective
-- The creative procress is based on divergence and convergence, in divergence you brainstorm and add ideas, in convergencee you select only the best and leave out the rest
+- Intermediate Packets make our ideas concrete, reveal connections between ideas, incubate ideas, sharpen your perspective
+- The creative procress is based on divergence and convergence, in divergence you brainstorm and add ideas, in convergence you select only the best and leave out the rest
 ## Capture
 - Capture information about the source, capture in your own words
 - Capture what resonates, not analytically
