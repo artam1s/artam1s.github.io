@@ -26,6 +26,8 @@ The fact of storing our thoughts as these *Intermediate Packets* gives us 4 main
 - Incubate ideas over time
 - Sharpen our unique perspectives
 
+A second brain works with 3 main tools: a digital note-taking app, a file system on your computer and a cloud service. Where you store each Intermediate Packet depends on what type of file it is or what content it has. For example, a summary about a book should be stored in your note-taking app while a pdf file for an invoice should go to your computer file system.
+
 # The CODE Method
 
 CODE stands for Capture, Organize, Distill, and Express The first 2 steps are based on the divergence stage of design thinking and the last 2 come from the convergence stage.
