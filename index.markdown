@@ -1,13 +1,13 @@
 ---
 layout: splash
-title: "Hi, I'm Artamis!"
+title: "Artamis' Personal Website"
 header:
     overlay_image: /assets/images/mountain.jpg
     image_description: "A photo of a mountain with snow on the top"
 #    actions:
 #      - label: "Join my newsletter"
 #        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-excerpt: "Welcome to my little corner of the web where I cover a wide variety of topics that I'm passionate about hoping to inspire curiosity, encourage learning, and provide ideas for exploration."
+excerpt: "Hi! Welcome to my little corner of the web where I cover a wide variety of topics that I'm passionate about hoping to inspire curiosity, encourage learning, and provide ideas for exploration."
 author_profile: false
 search: false
 feature_row:
