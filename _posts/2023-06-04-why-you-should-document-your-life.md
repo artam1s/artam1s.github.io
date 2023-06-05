@@ -8,7 +8,8 @@ header:
     teaser: /assets/images/polaroids.jpg
 ---
 
-# Why you should document your life
+Documenting your life should not be reserved just for the big moments. Keeping a record of your days is a great way to living an intentional and meaningful life.
+# How to start documenting your life
 
 ## The importance of documenting
 How much of your life do you actually remember? Do you remember all of the concerts you have been to? How about all the coffee shops you've visited? Or different parks you've been too?
