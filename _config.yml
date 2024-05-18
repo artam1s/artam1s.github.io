@@ -52,9 +52,9 @@ author:
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/artam1s"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/artam1s"
+    - label: "Reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/artam1s/"
 defaults:
   # _posts
   - scope:
