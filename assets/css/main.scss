@@ -8,12 +8,12 @@ search: false
 $link-color: #f2897b;
 $masthead-link-color: #f2897b;
 .list__item {
-  a {
-    text-decoration: none;
-  }
+    a{
+        text-decoration: none
+    }
 }
-h1 {
-  color: #f2897b;
+h1{
+    color:#f2897b;
 }
 */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
