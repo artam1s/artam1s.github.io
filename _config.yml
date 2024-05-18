@@ -86,9 +86,9 @@ footer:
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://www.github.com/artam1s"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/artam1s"
+    - label: "Reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/artam1s/"
 
 analytics:
   provider: "google-gtag"
@@ -103,15 +103,14 @@ tag_archive:
   path: /tags/
 
 social:
-  type:  Person
-  name:  Artamis
+  type: Person
+  name: Artamis
   links:
     - "https://twitter.com/artam1s"
-    - "https://instagram.com/artam1s"
-  
+
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-#minimal_mistakes_skin: "dirt"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
