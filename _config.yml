@@ -75,6 +75,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      toc: true
+      show_date: true
 footer:
   links:
     - label: "Email"
@@ -89,6 +99,11 @@ footer:
     - label: "Reddit"
       icon: "fab fa-fw fa-reddit"
       url: "https://www.reddit.com/user/artam1s/"
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 analytics:
   provider: "google-gtag"
