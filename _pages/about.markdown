@@ -12,3 +12,13 @@ Whether you're here to learn something new, get inspired, or just have a good re
 So, pull up a chair, grab a cup of coffee, and make yourself at home. I hope you'll find something here that sparks your curiosity, challenges your assumptions, or simply brings a smile to your face. And if you have any feedback, questions, or ideas for future topics, please don't hesitate to get in touch.
 
 Thanks for stopping by, and happy exploring!
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('artam1s', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>

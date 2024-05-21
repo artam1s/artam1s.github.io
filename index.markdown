@@ -2,8 +2,8 @@
 layout: splash
 title: "Artamis' Personal Website"
 header:
-    overlay_image: /assets/images/mountain.jpg
-    image_description: "A photo of a mountain with snow on the top"
+  overlay_image: /assets/images/mountain.jpg
+  image_description: "A photo of a mountain with snow on the top"
 #    actions:
 #      - label: "Join my newsletter"
 #        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
@@ -54,6 +54,18 @@ feature_row:
     btn_label: "Read more"
     btn_class: "btn--inverse"
 ---
+
 # Here you will find blogs about:
+
 {: .text-center}
 {% include feature_row %}
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('artam1s', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#00b9fe',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
