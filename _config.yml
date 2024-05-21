@@ -124,6 +124,9 @@ social:
   links:
     - "https://twitter.com/artam1s"
 
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js
+  - assets/js/clipboardrouge.js
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "dark"
