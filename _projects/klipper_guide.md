@@ -213,7 +213,9 @@ I highly recommend installing Klipper Adaptive Meshing & Purging ([KAMP](https:/
 First you need to define `[exclude_object]` in your `printer.cfg` file.
 
 1. Go to your `printer.cfg` file and add a line that says `[exclude_object]`
-   {% include figure image_path="/assets/images/klipper_guide/KG_11_exclude_obj.png" alt="screenshot of exclude object module" caption="Exclude object module" %}
+
+{% include figure image_path="/assets/images/klipper_guide/KG_11_exclude_obj.png" alt="screenshot of exclude object module" caption="Exclude object module" %}
+
 2. Go to your `moonraker.conf` file and add 2 lines
 
 ```YAML
@@ -222,7 +224,9 @@ enable_object_processing: True
 ```
 
 3. Make sure to go to your slicer and enable the "Label Objects" option. I use Cura and it labels objects by default.
-   (The next steps are copied from the [KAMP Github](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging?tab=readme-ov-file#installation))
+
+> (The next steps are copied from the [KAMP Github](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging?tab=readme-ov-file#installation))
+
 4. SSH into your Raspberry Pi and execute the following commands:
 
 ```bash
@@ -259,7 +263,7 @@ primary_branch: main
 
 > **Note:** The KAMP configuration files are broken up like this to allow those who do not use bed probes to benefit from adaptive purging, and other features.
 
-4. After you `[include]` the features you want, be sure to restart your firmware so those inclusions take effect. Don't forget to add `[include KAMP_Settings.cfg]` to your `printer.cfg`!
+7. After you `[include]` the features you want, be sure to restart your firmware so those inclusions take effect. Don't forget to add `[include KAMP_Settings.cfg]` to your `printer.cfg`!
 
 ## Axis Twist Compensation
 
