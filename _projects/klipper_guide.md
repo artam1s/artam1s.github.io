@@ -1,7 +1,7 @@
 ---
 title: Ultimate Guide for Klipper Installation on Ender 3 V3 SE
 date: 2024-05-20
-last_modified_at: 2024-05-21
+last_modified_at: 2024-05-22
 collection: projects
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
@@ -28,6 +28,9 @@ This project consists in changing the default Marlin software that comes with th
 - Power Supply for the Pi
 - SD card
 - USB C to USB A cable to connect the Ender and the Pi
+
+**Disclaimer:** The Ender 3 V3 SE display doesn't work with Klipper (yet) so you would lose the ability to operate your printer from the display knob, however there are some solutions like [this repo](https://github.com/jpcurti/E3V3SE_display_klipper) to restore some of the display's functionality
+{: .notice--warning}
 
 # Installation
 
@@ -195,6 +198,8 @@ Now you should have a working Ender 3 V3 SE with Klipper installed, congratulati
 Go to your main Fluidd or Mainsail web interface and scroll down to "Macros". Then run the `PID_BED` and `PID_EXTRUDER`. Run one first and after it finishes, run the other.
 {% include figure image_path="/assets/images/klipper_guide/KG_07_macros.png" alt="screenshot of the macros box" caption="Macros box" %}
 
+> Note: If macros don't appear in the home screen or if they don't run, go to `printer.cfg` and add `[include macro.cfg]` somewhere in the file
+
 ## Calibrate Z-Offset
 
 To calibrate your Z-Offset go to the Tune tab on your left and click on "Calibrate" to generate a mesh matrix of your bed.
@@ -213,55 +218,54 @@ I highly recommend installing Klipper Adaptive Meshing & Purging ([KAMP](https:/
 First you need to define `[exclude_object]` in your `printer.cfg` file.
 
 1. Go to your `printer.cfg` file and add a line that says `[exclude_object]`
-
-{% include figure image_path="/assets/images/klipper_guide/KG_11_exclude_obj.png" alt="screenshot of exclude object module" caption="Exclude object module" %}
+   {% include figure image_path="/assets/images/klipper_guide/KG_11_exclude_obj.png" alt="screenshot of exclude object module" caption="Exclude object module" %}
 
 2. Go to your `moonraker.conf` file and add 2 lines
 
-```YAML
-[file_manager]
-enable_object_processing: True
-```
+   ```
+   [file_manager]
+   enable_object_processing: True
+   ```
 
 3. Make sure to go to your slicer and enable the "Label Objects" option. I use Cura and it labels objects by default.
 
-> (The next steps are copied from the [KAMP Github](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging?tab=readme-ov-file#installation))
+   > (The next steps are copied from the [KAMP Github](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging?tab=readme-ov-file#installation))
 
 4. SSH into your Raspberry Pi and execute the following commands:
 
-```bash
- cd
+   ```bash
+    cd
 
- git clone https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+    git clone https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
 
- ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
+    ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
 
- cp ~/Klipper-Adaptive-Meshing-Purging/Configuration/KAMP_Settings.cfg ~/printer_data/config/KAMP_Settings.cfg
-```
+    cp ~/Klipper-Adaptive-Meshing-Purging/Configuration/KAMP_Settings.cfg ~/printer_data/config/KAMP_Settings.cfg
+   ```
 
-> **Note:** This will change to the home directory, clone the KAMP repo, create a symbolic link of the repo to your printer's config folder, and create a copy of `KAMP_Settings.cfg` in your config directory, ready to edit.
->
-> It is also possible that with older setups of klipper or moonraker that your config path will be different. Be sure to use the correct config path for your machine when making the symbolic link, and when copying `KAMP_Settings.cfg` to your config directory.
+   > **Note:** This will change to the home directory, clone the KAMP repo, create a symbolic link of the repo to your printer's config folder, and create a copy of `KAMP_Settings.cfg` in your config directory, ready to edit.
+   >
+   > It is also possible that with older setups of klipper or moonraker that your config path will be different. Be sure to use the correct config path for your machine when making the symbolic link, and when copying `KAMP_Settings.cfg` to your config directory.
 
 5. Open your `moonraker.conf` file and add this configuration:
 
-```YAML
-[update_manager Klipper-Adaptive-Meshing-Purging]
-type: git_repo
-channel: dev
-path: ~/Klipper-Adaptive-Meshing-Purging
-origin: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
-managed_services: klipper
-primary_branch: main
-```
+   ```
+   [update_manager Klipper-Adaptive-Meshing-Purging]
+   type: git_repo
+   channel: dev
+   path: ~/Klipper-Adaptive-Meshing-Purging
+   origin: https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+   managed_services: klipper
+   primary_branch: main
+   ```
 
-> **Note:** Whenever Moonraker configurations are changed, it must be restarted for changes to take effect. If you do not want moonraker to notify you of future updates to KAMP, feel free to skip this.
+   > **Note:** Whenever Moonraker configurations are changed, it must be restarted for changes to take effect. If you do not want moonraker to notify you of future updates to KAMP, feel free to skip this.
 
 6. Depending on what features you want from KAMP, you'll need to `[include]` some files in `KAMP_Settings.cfg`:
 
-![](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging/raw/main/Photos/Include-Tutorial.gif)
+   ![](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging/raw/main/Photos/Include-Tutorial.gif)
 
-> **Note:** The KAMP configuration files are broken up like this to allow those who do not use bed probes to benefit from adaptive purging, and other features.
+   > **Note:** The KAMP configuration files are broken up like this to allow those who do not use bed probes to benefit from adaptive purging, and other features.
 
 7. After you `[include]` the features you want, be sure to restart your firmware so those inclusions take effect. Don't forget to add `[include KAMP_Settings.cfg]` to your `printer.cfg`!
 
@@ -280,7 +284,7 @@ I hope you found this guide useful and that you were able to get your Ender 3 V3
 
 - [arismelachroinos](https://www.reddit.com/user/arismelachroinos/) amazing [reddit post](https://www.reddit.com/r/Ender3V3SE/comments/17ijuu9/klipper_on_the_ender_3_v3_se/)
 - [BootUse UA video](https://www.youtube.com/watch?v=LrBiwabN-Y8) (Ukranian with english subs)
-- pblvsky's Ender 3 V3 SE's [guide](https://pblvsky.gitbook.io/ender3v3se)
+- pblvsky's Ender 3 V3 SE's [guide](https://pblvsky.gitbook.io/ender3v3se/remote-control/klipper)
 
 If you run into any issues while going through this guide, don't hesitate to reach out and I'll do my best to help you. Happy printing!
 
