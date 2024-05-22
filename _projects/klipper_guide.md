@@ -1,7 +1,7 @@
 ---
 title: Ultimate Guide for Klipper Installation on Ender 3 V3 SE
 date: 2024-05-20
-last_modified_at: 2024-05-20
+last_modified_at: 2024-05-21
 collection: projects
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
@@ -122,29 +122,45 @@ To create the actual firmware that will be running in your 3D printer, you have 
 
 1. Go to the `/klipper` directory and run the menuconfig command by running the following code:
 
-```bash
-cd ~/klipper/
-make menuconfig
-```
+   ```bash
+   cd ~/klipper/
+   make menuconfig
+   ```
 
 2. Select the following settings:
 
-```
-- Micro-controller architecture: STMicroelectronics STM32
-- Processor model: STM32F103
-- Bootloader offset: 28KiB
-- Communication interface: Serial (on USART1 PA10/PA09)
-```
+   ```
+   - Micro-controller architecture: STMicroelectronics STM32
+   - Processor model: STM32F103
+   - Bootloader offset: 28KiB
+   - Communication interface: Serial (on USART1 PA10/PA09)
+   ```
 
 3. After everything is selected, press q and save your changes, then run:
 
-```bash
-make
-```
+   ```bash
+   make
+   ```
 
 ## Flash 3D Printer
 
-Once completed, there will be a klipper.bin file in the out folder. To get the file, go to your configuration files in the Fluidd or Mainsail web interface and copy it to your computer. Then you need to:
+Once completed, there will be a `klipper.bin` file in the `klipper/out/` folder. To get the file you will have to copy it from your Raspberry Pi to your computer, but first we have to move it from where it is generated to a folder Fluidd/Mainsail can access.
+
+To move the file, SSH into your Raspberry Pi and navigate to the `klipper/out/` folder by running the following command:
+
+```bash
+cd ~/klipper/out
+```
+
+Then run the `ls` command to confirm the file is there and if it is, you can send it to your `config` folder so it is visible from Fluidd/Mainsail by running the following command
+
+```bash
+cp klipper.bin ~/printer_data/config/
+```
+
+> Note: If you get an error that says "No such file or directory" you need to verify that the previous steps (compiling the firmware) were done correctly and look for the location of `klipper/out/` or `printer_data/config/` in your Raspberry Pi, then modify the previous commands accordingly.
+
+Now when you go to the configuration tab of your Fluid/Mainsail UI, the `klipper.bin` file should be there so you can just right click and download to your computer. Once you download the file, the next steps are:
 
 1. Transfer the klipper.bin file to your printer's SD card
 2. Turn off the printer
