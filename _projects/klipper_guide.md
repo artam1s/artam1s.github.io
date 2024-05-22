@@ -114,10 +114,10 @@ To install one of them we have to repeat the steps from above but selecting our 
 
 Once the steps above are complete, you should be able to access your web interface by going to `http://[hostname-of-your-pi].local` and see something similar to this:
 {% include figure image_path="/assets/images/klipper_guide/KG_03_Fluidd_home_menu.png" alt="screenshot of Fluidd home menu" caption="Fluidd home menu" %}
-Next you need to go to the Configuration tab (below image) and you should see a `printer.cfg` file and a macro.cfg file. If those files are nowhere to be seen, you can create them by clicking on the '+' button on top of the file list.
+Next you need to go to the Configuration tab (below image) and you should see a `printer.cfg` file and a `macro.cfg` file. If those files are nowhere to be seen, you can create them by clicking on the '+' button on top of the file list.
 {% include figure image_path="/assets/images/klipper_guide/KG_04_config_menu.png" alt="screenshot of Fluidd config menu" caption="Fluidd config menu" %}
 
-Then go to one of the many Github Repos to get a configuration file that is pre-set. I recommend [bootuz-dinamon](https://github.com/bootuz-dinamon/ender3-v3-se-full-klipper). Copy and paste the contents of `printer.cfg` and macro.cfg into yours.
+Then go to one of the many Github Repos to get a configuration file that is pre-set. I recommend [bootuz-dinamon](https://github.com/bootuz-dinamon/ender3-v3-se-full-klipper). Copy and paste the contents of `printer.cfg` and `macro.cfg` into yours.
 
 ## Create Printer Firmware (.bin file)
 
