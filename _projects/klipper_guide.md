@@ -1,7 +1,7 @@
 ---
 title: Ultimate Guide for Klipper Installation on Ender 3 V3 SE
 date: 2024-05-20
-last_modified_at: 2024-05-22
+last_modified_at: 2024-05-24
 collection: projects
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
@@ -120,6 +120,9 @@ Next you need to go to the Configuration tab (below image) and you should see a 
 Then go to one of the many Github Repos to get a configuration file that is pre-set. I recommend [bootuz-dinamon](https://github.com/bootuz-dinamon/ender3-v3-se-full-klipper). Copy and paste the contents of `printer.cfg` and `macro.cfg` into yours.
 
 ## Create Printer Firmware (.bin file)
+
+Make sure your SD card is formatted as FAT32 with an allocation size of 4096, otherwise you might run into issues and be unable to flash
+{: .notice--warning}
 
 To create the actual firmware that will be running in your 3D printer, you have to compile the firmware on your Rasberry Pi. For this, you need to follow the following steps:
 
