@@ -1,7 +1,7 @@
 ---
 title: Ultimate Guide for Klipper Installation on Ender 3 V3 SE
 date: 2024-05-20
-last_modified_at: 2024-05-24
+last_modified_at: 2025-01-06
 collection: projects
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
@@ -118,6 +118,8 @@ Next you need to go to the Configuration tab (below image) and you should see a 
 {% include figure image_path="/assets/images/klipper_guide/KG_04_config_menu.png" alt="screenshot of Fluidd config menu" caption="Fluidd config menu" %}
 
 Then go to one of the many Github Repos to get a configuration file that is pre-set. I recommend [bootuz-dinamon](https://github.com/bootuz-dinamon/ender3-v3-se-full-klipper). Copy and paste the contents of `printer.cfg` and `macro.cfg` into yours.
+
+**2025 Update:** I recommend [shubham0x13's](https://github.com/shubham0x13/ender-3-v3-se-klipper) config file that has several upgrades compared to bootuz's config file. Copy and past the contents of `printer.cfg` and `macro.cfg` into yours.
 
 ## Create Printer Firmware (.bin file)
 
