@@ -12,7 +12,7 @@ redirect_to: "https://athemis.me/projects/klipper_guide/"
 
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help keep the site ad-free', '#41b5eb', 'B0B6YCPC6');kofiwidget2.draw();</script>
 
-# Overview of the projects
+# Overview of the projectss
 
 This project consists in changing the default Marlin software that comes with the Ender 3 V3 SE from factory to Klipper. There are several benefits to running Klipper apart from the huge support you can find online, for example:
 
