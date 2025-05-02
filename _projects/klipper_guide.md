@@ -171,16 +171,17 @@ cp klipper.bin ~/printer_data/config/
 
 Now when you go to the configuration tab of your Fluid/Mainsail UI, the `klipper.bin` file should be there so you can just right click and download to your computer. Once you download the file, the next steps are:
 
-1. Transfer the klipper.bin file to your printer's SD card
-2. Turn off the printer
-3. Insert SD card
-4. Turn on the printer and wait 15 seconds
-5. Turn off the printer
-6. Take the SD card out and remove the .bin file
-7. Insert the empty SD card into the printer
-8. Turn on the printer (the screen should be a blue screensaver image)
-9. Connect your Raspberry Pi to the printer via USB cable
-10. Navigate to your Fluidd or Mainsail web interface
+1. Transfer the `klipper.bin` file to your printer's SD card
+2. Rename the file to `firmware.bin`
+3. Turn off the printer
+4. Insert SD card
+5. Turn on the printer and wait 15 seconds
+6. Turn off the printer
+7. Take the SD card out and remove the `.bin` file
+8. Insert the empty SD card into the printer
+9. Turn on the printer (the screen should be a blue screensaver image)
+10. Connect your Raspberry Pi to the printer via USB cable
+11. Navigate to your Fluidd or Mainsail web interface
 
 The printer should be there and you should be looking at something like this:
 {% include figure image_path="/assets/images/klipper_guide/KG_05_Fluidd_home_menu.png" alt="screenshot of Fluidd home menu" caption="Fluidd home menu" %}
