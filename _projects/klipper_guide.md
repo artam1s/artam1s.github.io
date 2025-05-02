@@ -145,6 +145,13 @@ To create the actual firmware that will be running in your 3D printer, you have 
    - Communication interface: Serial (on USART1 PA10/PA09)
    ```
 
+3. In the printer screen, check your "hardware version". If it's `CR4NS200320C14` you have the new motherboard version. Change the settings:
+
+   ```
+   - Processor model: STM32F401
+   - Bootloader offset: 64KiB
+   ```
+
 3. After everything is selected, press q and save your changes, then run:
 
    ```bash
@@ -172,7 +179,7 @@ cp klipper.bin ~/printer_data/config/
 Now when you go to the configuration tab of your Fluid/Mainsail UI, the `klipper.bin` file should be there so you can just right click and download to your computer. Once you download the file, the next steps are:
 
 1. Transfer the `klipper.bin` file to your printer's SD card
-2. Rename the file to `firmware.bin`
+2. If you have the new motherboard version: create a directory `STM32F4_UPDATE` and move the update file there.
 3. Turn off the printer
 4. Insert SD card
 5. Turn on the printer and wait 15 seconds
