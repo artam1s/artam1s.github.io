@@ -148,8 +148,10 @@ To create the actual firmware that will be running in your 3D printer, you have 
 3. In the printer screen, check your "hardware version". If it's `CR4NS200320C14` you have the new motherboard version. Change the settings:
 
    ```
+   - Micro-controller architecture: STMicroelectronics STM32
    - Processor model: STM32F401
    - Bootloader offset: 64KiB
+   - Communication interface: Serial (on USART1 PA10/PA9)
    ```
 
 3. After everything is selected, press q and save your changes, then run:
