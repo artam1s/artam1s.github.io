@@ -15,7 +15,7 @@ Thanks for stopping by, and happy exploring!
 
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
-  kofiWidgetOverlay.draw('artam1s', {
+  kofiWidgetOverlay.draw('athem1s', {
     'type': 'floating-chat',
     'floating-chat.donateButton.text': 'Support me',
     'floating-chat.donateButton.background-color': '#00b9fe',
