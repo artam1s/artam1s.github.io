@@ -6,6 +6,7 @@ collection: projects
 header:
   image: /assets/images/klipper_guide/ender3.jpeg
   teaser: /assets/images/klipper_guide/ender3.jpeg
+redirect_to: "https://athemis.me/projects/klipper_guide/"
 ---
 
 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Help keep the site ad-free', '#41b5eb', 'B0B6YCPC6');kofiwidget2.draw();</script>
