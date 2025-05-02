@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_to | xml_escape }}" />
+    <script>
+      window.location.href = "{{ page.redirect_to | xml_escape }}";
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="{{ page.redirect_to | xml_escape }}">click here</a>.</p>
+  </body>
+</html>
