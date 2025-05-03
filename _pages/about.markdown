@@ -3,6 +3,8 @@ title: About Me
 permalink: /about/
 classes: wide
 search: false
+layout: redirect
+redirect_to: "https://athemis.me/about/"
 ---
 
 Hi, I'm Artamis and welcome to my blog! Here, you'll find a wide variety of topics that I'm passionate about, from technology to gaming, from hacking to web development, from finance to art. I created this space as a way to share my thoughts, ideas, and experiences with others who are curious about the world around them.
