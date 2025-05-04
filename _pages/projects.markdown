@@ -1,6 +1,7 @@
 ---
 title: Projects
-layout: collection
+layout: redirect
+redirect_to: "https://athemis.me/projects/"
 permalink: /projects/
 collection: projects
 entries_layout: grid

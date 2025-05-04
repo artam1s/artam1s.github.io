@@ -7,7 +7,7 @@ header:
 #    actions:
 #      - label: "Join my newsletter"
 #        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-excerpt: "Hi! Welcome to my little corner of the web where I cover a wide variety of topics that I'm passionate about hoping to inspire curiosity, encourage learning, and provide ideas for exploration."
+excerpt: "Hi! I recently changed my user name so this site has been migrated to: [athemis.me](https://athemis.me)"
 author_profile: false
 search: false
 feature_row:
@@ -54,6 +54,7 @@ feature_row:
     btn_label: "Read more"
     btn_class: "btn--inverse"
 ---
+# This site has been migrated to [my new site](https://athemis.me)
 
 # Here you will find blogs about:
 
